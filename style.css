@@ -1,0 +1,91 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: 700;
+    color: #ff4d4d;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: #ff4d4d;
+}
+
+.nav-links .btn {
+    background: #ff4d4d;
+    color: #fff;
+    padding: 6px 14px;
+    border-radius: 6px;
+}
+
+
+
+/* Smooth animation */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+    background: linear-gradient(135deg, #ff4d4d, #ff7a7a);
+    border-radius: 20px;
+    color: white;
+    animation: fadeIn 1s ease-in;
+}
+
+/* Fade animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Button hover */
+.hero-buttons .btn,
+.btn-outline {
+    transition: all 0.3s ease;
+}
+
+.hero-buttons .btn:hover {
+    background: black;
+    color: white;
+    transform: scale(1.05);
+}
+
+.btn-outline:hover {
+    background: white;
+    color: #ff4d4d;
+    transform: scale(1.05);
+}
+
+/* Image animation */
+.hero-image img {
+    width: 250px;
+    transition: transform 0.4s ease;
+}
+
+.hero-image img:hover {
+    transform: scale(1.1) rotate(5deg);
+}
